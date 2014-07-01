@@ -1783,7 +1783,7 @@ header .links a {  }
 /* ======================================================================================= */
 
 
-/* Footer ================================================================================ */
+/* Footer ================================================================================
 .footer-container {background: none repeat scroll 0 0 #F3F3F3;border: 1px solid #F3F3F3;border-radius: 0 0 5px 5px;-webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; }
 footer { width:930px; margin:0 auto; padding:10px; }
 footer .store-switcher { display:inline; margin:0 5px 0 0;  }
@@ -1791,7 +1791,7 @@ footer .store-switcher label { font-weight:bold; vertical-align:middle; }
 footer .store-switcher select { padding:0; vertical-align:middle; }
 footer a { text-decoration:none;text-shadow: 1px 1px 1px #FFFFFF; }
 footer a:hover { text-decoration:underline; }
-footer .bugs { /*margin:13px 0 0;*/ display:none; }
+footer .bugs { /margin:13px 0 0;/ display:none; }
 footer .bugs a { text-decoration:underline; }
 footer .bugs a:hover { text-decoration:none; }
 footer address { margin:0 0 10px; }
@@ -1802,7 +1802,7 @@ footer ul.links { display:block; }
 footer li { display:inline; border-right: 1px solid #adadad; display: inline; padding: 0 7px 0 3px; }
 footer li.last { background:none !important; padding-right:0 !important;border-right:0; }
 .footer-container .bottom-container { margin:0 0 5px; }
-/* ======================================================================================= */
+ ======================================================================================= */
 
 /* Sample Data============================================================================ */
 .home-callout { margin-bottom:12px; }
@@ -1906,13 +1906,61 @@ footer:after,
    ========================================================================== */
 
 body {
+  border-top: 8px solid #111;
   font-family: 'Lato', sans-serif;
 }
 
-.topbar-accent {
-  background: #000;
-  height: 8px;
+/*= FOOTER =*/
+
+.site-footer {
+  background: #111;
+  border-top: 2px solid #ff3000;
+  height: 300px; /* TEMP */
   width: 100%;
+}
+
+.site-footer footer {
+  margin: 20px auto 0;
+  padding: 0;
+  width: 1020px;
+}
+
+.site-footer__section {
+  float: left;
+  height: 300px;
+  width: 255px;
+}
+
+.footer-menu {
+  margin-top: 21px;
+}
+
+.footer-menu__heading {
+  color: #ff3000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  margin-bottom: 21px;
+}
+
+.footer-menu__list {
+
+}
+
+.footer-menu__item {
+
+}
+
+.footer-menu__item a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  transition: .1s all;
+}
+
+.footer-menu__item a:hover {
+  opacity: .7;
 }
 
 @media only screen and (min-width: 480px) {
