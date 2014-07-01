@@ -1905,24 +1905,100 @@ footer:after,
    Modify as content requires.
    ========================================================================== */
 
-.test {
-  background: red;
-  height: 100px;
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.topbar-accent {
+  background: #000;
+  height: 8px;
   width: 100%;
 }
 
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
-  .test {
-    width: 80%;
-  }
+  
 
 }
 
 @media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-  .test {
-    width: 50%;
+  
+  /*=== HEADER ===*/
+
+  .site-header {
+    background: url('../images/carousel-1.jpg') no-repeat center; /* TEMP */
+    height: 180px;
+    margin: 0 auto;
+    width: 980px;
+  }
+
+  .site-logo {
+    background: url('img/hsl-logo-white.png') no-repeat center;
+    height: 149px;
+    margin: 0 auto;
+    transition: .3s all;
+    width: 149px;
+  }
+
+  .site-logo:hover {
+    opacity: .9;
+  }
+
+  .site-logo a {
+    display: block;
+    height: 149px;
+    overflow: hidden;
+    text-indent: 100%;
+    width: 149px;
+    white-space: nowrap;
+  }
+  
+  /*=== NAVIGATION ===*/
+
+  .site-nav {
+    margin-top: -75px;
+  }
+
+  .site-nav ul {
+    height: 21px;
+  }
+
+  .site-nav--first {
+    float: left;
+  }
+
+  .site-nav--last {
+    float: right;
+  }
+
+  .site-nav__item,
+  .site-nav__separator {
+    display: block;
+    float: left;
+    height: 21px;
+  }
+
+  .site-nav__item a {
+    color: #fff;
+    display: block;
+    line-height: 21px;
+    padding: 0 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s all;
+  }
+
+  .site-nav__item a:hover {
+    opacity: .9;
+  }
+
+  .site-nav__item--current a {
+    color: #ffd200;
+  }
+
+  .site-nav__separator {
+    background: url('img/dot.png') no-repeat center center;
+    width: 8px;
   }
 }
 
