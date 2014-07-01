@@ -302,7 +302,7 @@ body {
 .site-footer {
   background: #111;
   border-top: 2px solid #ff3000;
-  height: 300px; /* TEMP */
+  height: 300px; // TEMP
   width: 100%;
 }
 
@@ -314,7 +314,7 @@ body {
 
 .site-footer__section {
   float: left;
-  height: 300px;
+  height: 280px;
   width: 255px;
 }
 
@@ -361,16 +361,18 @@ body {
   /*=== HEADER ===*/
 
   .site-header {
-    background: url('../images/carousel-1.jpg') no-repeat center; /* TEMP */
+    // background: url('../images/carousel-1.jpg') no-repeat center;
     height: 180px;
     margin: 0 auto;
+    overflow: hidden;
+    position: relative;
     width: 980px;
   }
 
   .site-logo {
     background: url('img/hsl-logo-white.png') no-repeat center;
     height: 149px;
-    margin: 0 auto;
+    margin: 20px auto 0;
     transition: .3s all;
     width: 149px;
   }
@@ -391,7 +393,7 @@ body {
   /*=== NAVIGATION ===*/
 
   .site-nav {
-    margin-top: -75px;
+    margin-top: -80px;
   }
 
   .site-nav ul {
@@ -413,7 +415,7 @@ body {
   .site-nav--actions {
     margin-top: 0;
     position: absolute;
-    right: 37px;
+    right: 28px;
     top: 15px;
   }
 
@@ -467,6 +469,18 @@ body {
         content: "|";
       }
     }
+  }
+
+  /*=== CONTENT ===*/
+
+  .site-content {
+    margin: 0 auto;
+    width: 1280px;
+    margin-top: -180px;
+  }
+
+  .carousel {
+    text-align: center;
   }
 
 }

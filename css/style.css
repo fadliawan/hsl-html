@@ -464,7 +464,6 @@ body {
   background: #111;
   border-top: 2px solid #ff3000;
   height: 300px;
-  /* TEMP */
   width: 100%; }
 
 .site-footer footer {
@@ -474,7 +473,7 @@ body {
 
 .site-footer__section {
   float: left;
-  height: 300px;
+  height: 280px;
   width: 255px; }
 
 .footer-menu {
@@ -502,16 +501,16 @@ body {
 @media only screen and (min-width: 768px) {
   /*=== HEADER ===*/
   .site-header {
-    background: url("../images/carousel-1.jpg") no-repeat center;
-    /* TEMP */
     height: 180px;
     margin: 0 auto;
+    overflow: hidden;
+    position: relative;
     width: 980px; }
 
   .site-logo {
     background: url("img/hsl-logo-white.png") no-repeat center;
     height: 149px;
-    margin: 0 auto;
+    margin: 20px auto 0;
     transition: .3s all;
     width: 149px; }
 
@@ -528,7 +527,7 @@ body {
 
   /*=== NAVIGATION ===*/
   .site-nav {
-    margin-top: -75px; }
+    margin-top: -80px; }
 
   .site-nav ul {
     height: 21px; }
@@ -545,7 +544,7 @@ body {
   .site-nav--actions {
     margin-top: 0;
     position: absolute;
-    right: 37px;
+    right: 28px;
     top: 15px; }
 
   .site-nav__item,
@@ -583,7 +582,16 @@ body {
       background: none; }
       .site-nav--actions .site-nav__separator:before {
         color: #fff;
-        content: "|"; } }
+        content: "|"; }
+
+  /*=== CONTENT ===*/
+  .site-content {
+    margin: 0 auto;
+    width: 1280px;
+    margin-top: -180px; }
+
+  .carousel {
+    text-align: center; } }
 /* ==|== print styles =======================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
