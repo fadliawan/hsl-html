@@ -1,6 +1,11 @@
 .site-header {
+  background: #111;
   width: 100%;
-  
+
+  .page-home & {
+    background: none;
+  }
+
   header {
     height: 180px;
     margin: 0 auto;
@@ -11,11 +16,18 @@
 }
 
 .site-logo {
-  background: url('img/hsl-logo-white.png') no-repeat center;
+  background: #111 url('img/hsl-logo-white.png') no-repeat center;
+  border: 5px solid #111;
+  border-radius: 100px;
   height: 149px;
   margin: 20px auto 0;
   transition: .3s all;
   width: 149px;
+  
+  .page-home & {
+    background-color: transparent;
+    border-color: transparent;
+  }
 }
 
 .site-logo:hover {
