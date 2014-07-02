@@ -459,22 +459,111 @@ body {
   border-top: 8px solid #111;
   font-family: 'Lato', sans-serif; }
 
-/*= FOOTER =*/
+.site-header {
+  width: 100%; }
+  .site-header header {
+    height: 180px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 1020px; }
+
+.site-logo {
+  background: url("img/hsl-logo-white.png") no-repeat center;
+  height: 149px;
+  margin: 20px auto 0;
+  transition: .3s all;
+  width: 149px; }
+
+.site-logo:hover {
+  opacity: .9; }
+
+.site-logo a {
+  display: block;
+  height: 149px;
+  overflow: hidden;
+  text-indent: 100%;
+  width: 149px;
+  white-space: nowrap; }
+
+/*=== NAVIGATION ===*/
+.site-nav {
+  margin-top: -80px; }
+
+.site-nav ul {
+  height: 21px; }
+
+.site-nav--actions ul {
+  height: 14px; }
+
+.site-nav--first {
+  float: left; }
+
+.site-nav--last {
+  float: right; }
+
+.site-nav--actions {
+  margin-top: 0;
+  position: absolute;
+  right: 28px;
+  top: 15px; }
+
+.site-nav__item,
+.site-nav__separator {
+  display: block;
+  float: left;
+  font-size: 14px;
+  height: 21px; }
+  .site-nav--actions .site-nav__item, .site-nav--actions
+  .site-nav__separator {
+    font-size: 10px;
+    height: 14px; }
+
+.site-nav__item a {
+  color: #fff;
+  display: block;
+  line-height: 21px;
+  padding: 0 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s all; }
+  .site-nav__item a:hover {
+    opacity: .8; }
+  .site-nav--actions .site-nav__item a {
+    line-height: 14px;
+    padding: 0 10px; }
+
+.site-nav__item--current a {
+  color: #ffd200; }
+
+.site-nav__separator {
+  background: url("img/dot.png") no-repeat center center;
+  width: 8px; }
+  .site-nav--actions .site-nav__separator {
+    background: none; }
+    .site-nav--actions .site-nav__separator:before {
+      color: #fff;
+      content: "|"; }
+
+.site-content {
+  background: url("img/carousel-1.jpg") no-repeat center;
+  background-size: cover;
+  height: 700px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: -180px; }
+
+.carousel {
+  text-align: center; }
+
 .site-footer {
   background: #111;
   border-top: 2px solid #ff3000;
-  height: 300px;
   width: 100%; }
-
-.site-footer footer {
-  margin: 20px auto 0;
-  padding: 0;
-  width: 1020px; }
-
-.site-footer__section {
-  float: left;
-  height: 280px;
-  width: 255px; }
+  .site-footer footer {
+    margin: 20px auto 0;
+    padding: 0;
+    width: 100%; }
 
 .footer-menu {
   margin-top: 21px; }
@@ -497,101 +586,16 @@ body {
   opacity: .7; }
 
 @media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */ }
-@media only screen and (min-width: 768px) {
-  /*=== HEADER ===*/
-  .site-header {
-    height: 180px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    width: 980px; }
+  .site-footer {
+    height: 300px; }
 
-  .site-logo {
-    background: url("img/hsl-logo-white.png") no-repeat center;
-    height: 149px;
-    margin: 20px auto 0;
-    transition: .3s all;
-    width: 149px; }
-
-  .site-logo:hover {
-    opacity: .9; }
-
-  .site-logo a {
-    display: block;
-    height: 149px;
-    overflow: hidden;
-    text-indent: 100%;
-    width: 149px;
-    white-space: nowrap; }
-
-  /*=== NAVIGATION ===*/
-  .site-nav {
-    margin-top: -80px; }
-
-  .site-nav ul {
-    height: 21px; }
-
-  .site-nav--actions ul {
-    height: 14px; }
-
-  .site-nav--first {
-    float: left; }
-
-  .site-nav--last {
-    float: right; }
-
-  .site-nav--actions {
-    margin-top: 0;
-    position: absolute;
-    right: 28px;
-    top: 15px; }
-
-  .site-nav__item,
-  .site-nav__separator {
-    display: block;
+  .site-footer__section {
     float: left;
-    font-size: 14px;
-    height: 21px; }
-    .site-nav--actions .site-nav__item, .site-nav--actions
-    .site-nav__separator {
-      font-size: 10px;
-      height: 14px; }
-
-  .site-nav__item a {
-    color: #fff;
-    display: block;
-    line-height: 21px;
-    padding: 0 40px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .3s all; }
-    .site-nav__item a:hover {
-      opacity: .8; }
-    .site-nav--actions .site-nav__item a {
-      line-height: 14px;
-      padding: 0 10px; }
-
-  .site-nav__item--current a {
-    color: #ffd200; }
-
-  .site-nav__separator {
-    background: url("img/dot.png") no-repeat center center;
-    width: 8px; }
-    .site-nav--actions .site-nav__separator {
-      background: none; }
-      .site-nav--actions .site-nav__separator:before {
-        color: #fff;
-        content: "|"; }
-
-  /*=== CONTENT ===*/
-  .site-content {
-    margin: 0 auto;
-    width: 1280px;
-    margin-top: -180px; }
-
-  .carousel {
-    text-align: center; } }
+    height: 280px;
+    width: 25%; } }
+@media only screen and (min-width: 1020px) {
+  .site-footer footer {
+    width: 1020px; } }
 /* ==|== print styles =======================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
@@ -640,3 +644,21 @@ body {
 
   h2, h3 {
     page-break-after: avoid; } }
+.one {
+  background: red;
+  width: 100%;
+  height: 200px; }
+
+.two {
+  background: blue;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  z-index: 100; }
+
+.three {
+  background: yellow;
+  width: 400px;
+  height: 200px;
+  margin-top: -50px;
+  z-index: 50; }

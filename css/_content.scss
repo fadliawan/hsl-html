@@ -1,0 +1,26 @@
+.site-content {
+  background: url('img/carousel-1.jpg') no-repeat center;
+  background-size: cover;
+  height: 700px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: -180px;
+}
+
+.carousel {
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+  // Tablet portrait + Mobile landscape
+
+}
+
+@media only screen and (min-width: 768px) {
+  // Tablet landscape
+}
+
+@media only screen and (min-width: 1020px) {
+  // Desktop only
+
+}

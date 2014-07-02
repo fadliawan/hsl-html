@@ -1,0 +1,127 @@
+.site-header {
+  width: 100%;
+  
+  header {
+    height: 180px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 1020px;
+  }
+}
+
+.site-logo {
+  background: url('img/hsl-logo-white.png') no-repeat center;
+  height: 149px;
+  margin: 20px auto 0;
+  transition: .3s all;
+  width: 149px;
+}
+
+.site-logo:hover {
+  opacity: .9;
+}
+
+.site-logo a {
+  display: block;
+  height: 149px;
+  overflow: hidden;
+  text-indent: 100%;
+  width: 149px;
+  white-space: nowrap;
+}
+
+/*=== NAVIGATION ===*/
+
+.site-nav {
+  margin-top: -80px;
+}
+
+.site-nav ul {
+  height: 21px;
+}
+
+.site-nav--actions ul {
+  height: 14px;
+}
+
+.site-nav--first {
+  float: left;
+}
+
+.site-nav--last {
+  float: right;
+}
+
+.site-nav--actions {
+  margin-top: 0;
+  position: absolute;
+  right: 28px;
+  top: 15px;
+}
+
+.site-nav__item,
+.site-nav__separator {
+  display: block;
+  float: left;
+  font-size: 14px;
+  height: 21px;
+
+  .site-nav--actions & {
+    font-size: 10px;
+    height: 14px;
+  }
+}
+
+.site-nav__item {
+  a {
+    color: #fff;
+    display: block;
+    line-height: 21px;
+    padding: 0 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s all;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    .site-nav--actions & {
+      line-height: 14px;
+      padding: 0 10px;
+    }
+  }
+}
+
+.site-nav__item--current a {
+  color: #ffd200;
+}
+
+.site-nav__separator {
+  background: url('img/dot.png') no-repeat center center;
+  width: 8px;
+
+  .site-nav--actions & {
+    background: none;
+
+    &:before {
+      color: #fff;
+      content: "|";
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  // Tablet portrait + Mobile landscape
+
+}
+
+@media only screen and (min-width: 768px) {
+  // Tablet landscape
+}
+
+@media only screen and (min-width: 1020px) {
+  // Desktop only
+
+}
