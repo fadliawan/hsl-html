@@ -1,12 +1,13 @@
 .site-content {
   background: #ececec;
-  height: 700px;
   margin: -50px auto 0;
+  overflow: hidden;
   width: 100%;
 
   .page-home & {
     background: transparent url('img/carousel-1.jpg') no-repeat center;
     background-size: cover;
+    height: 700px;
     margin-top: -180px;
   }
 }
@@ -19,6 +20,40 @@
 
 .carousel {
   text-align: center;
+}
+
+.about-whatever {
+  border: 10px solid #fff;
+  margin-bottom: 60px;
+  padding: 50px 265px 50px 120px;
+  position: relative;
+
+  h1 {
+    color: $heading-color;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  blockquote {
+    bottom: 71px;
+    color: $heading-color;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    text-align: right;
+    text-transform: uppercase;
+  }
 }
 
 @media only screen and (min-width: 480px) {

@@ -555,12 +555,13 @@ body {
 
 .site-content {
   background: #ececec;
-  height: 700px;
   margin: -50px auto 0;
+  overflow: hidden;
   width: 100%; }
   .page-home .site-content {
     background: transparent url("img/carousel-1.jpg") no-repeat center;
     background-size: cover;
+    height: 700px;
     margin-top: -180px; }
 
 .content {
@@ -570,6 +571,33 @@ body {
 
 .carousel {
   text-align: center; }
+
+.about-whatever {
+  border: 10px solid #fff;
+  margin-bottom: 60px;
+  padding: 50px 265px 50px 120px;
+  position: relative; }
+  .about-whatever h1 {
+    color: #343434;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  .about-whatever p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-bottom: 1.5em; }
+  .about-whatever blockquote {
+    bottom: 71px;
+    color: #343434;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    text-align: right;
+    text-transform: uppercase; }
 
 .site-footer {
   background: #111;
@@ -659,21 +687,3 @@ body {
 
   h2, h3 {
     page-break-after: avoid; } }
-.one {
-  background: red;
-  width: 100%;
-  height: 200px; }
-
-.two {
-  background: blue;
-  width: 300px;
-  height: 200px;
-  position: relative;
-  z-index: 100; }
-
-.three {
-  background: yellow;
-  width: 400px;
-  height: 200px;
-  margin-top: -50px;
-  z-index: 50; }

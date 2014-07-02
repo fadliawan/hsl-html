@@ -297,6 +297,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+@import "commons";
 @import "header";
 @import "content";
 @import "footer";
@@ -320,26 +321,4 @@ body {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
-}
-
-.one {
-  background: red;
-  width: 100%;
-  height: 200px;
-}
-
-.two {
-  background: blue;
-  width: 300px;
-  height: 200px;
-  position: relative;
-  z-index: 100;
-}
-
-.three {
-  background: yellow;
-  width: 400px;
-  height: 200px;
-  margin-top: -50px;
-  z-index: 50;
 }
