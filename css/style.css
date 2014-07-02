@@ -605,8 +605,13 @@ body {
   width: 100%; }
   .site-footer footer {
     margin: 20px auto 0;
-    padding: 0;
+    overflow: hidden;
+    padding: 0 0 20px;
     width: 100%; }
+
+.site-footer__section {
+  float: left;
+  width: 50%; }
 
 .footer-menu {
   margin-top: 21px; }
@@ -633,11 +638,11 @@ body {
     height: 300px; }
 
   .site-footer__section {
-    float: left;
     height: 280px;
     width: 25%; } }
 @media only screen and (min-width: 1020px) {
   .site-footer footer {
+    padding: 0;
     width: 1020px; } }
 /* ==|== print styles =======================================================
    Print styles.

@@ -5,13 +5,15 @@
 
   footer {
     margin: 20px auto 0;
-    padding: 0;
+    overflow: hidden;
+    padding: 0 0 20px;
     width: 100%;
   }
 }
 
 .site-footer__section {
-
+  float: left;
+  width: 50%;
 }
 
 .footer-menu {
@@ -47,28 +49,24 @@
 }
 
 @media only screen and (min-width: 480px) {
-  // Tablet portrait + Mobile landscape
+  // Mobile landscape + Tablet portrait
 
   .site-footer {
     height: 300px;
   }
 
   .site-footer__section {
-    float: left;
     height: 280px;
     width: 25%;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  // Tablet landscape
-}
-
 @media only screen and (min-width: 1020px) {
-  // Desktop only
+  // Tablet landscape + Desktop
 
   .site-footer {
     footer {
+      padding: 0;
       width: 1020px;
     }
   }
