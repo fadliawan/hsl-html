@@ -577,6 +577,7 @@ body {
 
 .content {
   margin: 0 auto;
+  overflow: hidden;
   padding-top: 80px;
   width: 1020px; }
 
@@ -743,6 +744,27 @@ body {
     -moz-transition: 0.1s all;
     -o-transition: 0.1s all;
     transition: 0.1s all; }
+
+.vinyl {
+  margin: 40px auto 0;
+  overflow: hidden;
+  width: 980px; }
+
+.vinyl__gallery {
+  float: left;
+  width: 300px; }
+
+.vinyl__info {
+  float: right;
+  width: 640px; }
+
+.vinyl__description {
+  float: left;
+  width: 310px; }
+
+.vinyl__actions {
+  float: right;
+  width: 310px; }
 
 .site-footer {
   background: #111;

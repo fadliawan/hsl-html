@@ -18,6 +18,7 @@
 
 .content {
   margin: 0 auto;
+  overflow: hidden;
   padding-top: 80px;
   width: 1020px;
 }
@@ -25,6 +26,8 @@
 .carousel {
   text-align: center;
 }
+
+// About Page
 
 .about-whatever {
   border: 10px solid #fff;
@@ -55,6 +58,8 @@
     text-transform: uppercase;
   }
 }
+
+// Store Page
 
 .store {
   h1 {
@@ -207,6 +212,35 @@
   .product.product--active & {
     @include hsr-transition(.1s all);
   }
+}
+
+
+// Vinyl Details Page
+
+.vinyl {
+  margin: 40px auto 0;
+  overflow: hidden;
+  width: 980px;
+}
+
+.vinyl__gallery {
+  float: left;
+  width: 300px;
+}
+
+.vinyl__info {
+  float: right;
+  width: 640px;
+}
+
+.vinyl__description {
+  float: left;
+  width: 310px;
+}
+
+.vinyl__actions {
+  float: right;
+  width: 310px;
 }
 
 @media only screen and (min-width: 480px) {
