@@ -1,0 +1,152 @@
+.store {
+  h1 {
+    @extend %heading-one;
+
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+.product-catalog {
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+
+.product {
+  display: block;
+  float: left;
+  margin: 40px 15px 0 0;
+  position: relative;
+  width: 330px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.product__cover {
+  left: 50px;
+  position: absolute;
+  @include hsr-transition(.2s all);
+  z-index: 200;
+
+  .product:hover & {
+    left: 15px;
+  }
+}
+
+.product__vinyl {
+  left: 50px;
+  position: absolute;
+  @include hsr-transition(.2s all);
+  z-index: 100;
+
+  .product:hover & {
+    left: 83px;
+    transform: rotate(25deg);
+  }
+}
+
+.product__price {
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1em;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: -35px;
+  @include hsr-transition(.5s all);
+  z-index: 400;
+
+  .product:hover & {
+    opacity: 1;
+  }
+}
+
+.product__price-currency {
+  font-size: 18px;
+}
+
+.product__info {
+  background-color: rgba(0, 0, 0, .85);
+  border-bottom: 2px solid $hsr-red;
+  margin-top: 136px;
+  opacity: 0;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  @include hsr-transition(.5s all);
+  z-index: 300;
+
+  .product:hover & {
+    opacity: 1;
+  }
+}
+
+.product-info__title {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1em;
+  margin-bottom: 8px;
+}
+
+.product-info__artist,
+.product-info__spec {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1em;
+  margin-bottom: 6px;
+}
+
+.product-info__spec {
+  margin-bottom: 0;
+}
+
+.product__detail-link {
+  color: #666;
+  display: block;
+  float: left;
+  line-height: 28px;
+  margin-left: 28px;
+  opacity: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include hsr-transition(.5s .2s all);
+
+  &:hover {
+    color: #000;
+    cursor: pointer;
+  }
+
+  .product:hover & {
+    opacity: 1;
+  }
+
+  .product.product--active & {
+    @include hsr-transition(.1s all);
+  }
+}
+
+.product__cart-button {
+  background: $hsr-red;
+  border: none;
+  color: #fff;
+  display: block;
+  float: right;
+  font-weight: 700;
+  max-height: 0;
+  line-height: 28px;
+  outline: none;
+  padding: 0 15px;
+  text-transform: uppercase;
+  @include hsr-transition(.5s .1s all);
+
+  .product:hover & {
+    max-height: 100px;
+  }
+
+  .product.product--active & {
+    @include hsr-transition(.1s all);
+  }
+}
