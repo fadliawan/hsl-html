@@ -624,7 +624,10 @@ body {
 .product__cover {
   left: 50px;
   position: absolute;
-  transition: .2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all;
   z-index: 200; }
   .product:hover .product__cover {
     left: 15px; }
@@ -632,7 +635,10 @@ body {
 .product__vinyl {
   left: 50px;
   position: absolute;
-  transition: .2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all;
   z-index: 100; }
   .product:hover .product__vinyl {
     left: 83px;
@@ -647,7 +653,10 @@ body {
   position: absolute;
   right: 0;
   top: -35px;
-  transition: .5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
   z-index: 400; }
   .product:hover .product__price {
     opacity: 1; }
@@ -663,7 +672,10 @@ body {
   padding: 15px;
   position: relative;
   text-align: center;
-  transition: .5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
   z-index: 300; }
   .product:hover .product__info {
     opacity: 1; }
@@ -693,14 +705,20 @@ body {
   opacity: 0;
   text-decoration: none;
   text-transform: uppercase;
-  transition: .5s .2s all; }
+  -webkit-transition: 0.5s 0.2s all;
+  -moz-transition: 0.5s 0.2s all;
+  -o-transition: 0.5s 0.2s all;
+  transition: 0.5s 0.2s all; }
   .product__detail-link:hover {
     color: #000;
     cursor: pointer; }
   .product:hover .product__detail-link {
     opacity: 1; }
   .product.product--active .product__detail-link {
-    transition-delay: 0s; }
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+    transition: 0.1s all; }
 
 .product__cart-button {
   background: #ff3000;
@@ -714,11 +732,17 @@ body {
   outline: none;
   padding: 0 15px;
   text-transform: uppercase;
-  transition: .5s .1s all; }
+  -webkit-transition: 0.5s 0.1s all;
+  -moz-transition: 0.5s 0.1s all;
+  -o-transition: 0.5s 0.1s all;
+  transition: 0.5s 0.1s all; }
   .product:hover .product__cart-button {
     max-height: 100px; }
   .product.product--active .product__cart-button {
-    transition-delay: 0s; }
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+    transition: 0.1s all; }
 
 .site-footer {
   background: #111;

@@ -85,7 +85,7 @@
 .product__cover {
   left: 50px;
   position: absolute;
-  transition: .2s all;
+  @include hsr-transition(.2s all);
   z-index: 200;
 
   .product:hover & {
@@ -96,7 +96,7 @@
 .product__vinyl {
   left: 50px;
   position: absolute;
-  transition: .2s all;
+  @include hsr-transition(.2s all);
   z-index: 100;
 
   .product:hover & {
@@ -114,7 +114,7 @@
   position: absolute;
   right: 0;
   top: -35px;
-  transition: .5s all;
+  @include hsr-transition(.5s all);
   z-index: 400;
 
   .product:hover & {
@@ -134,7 +134,7 @@
   padding: 15px;
   position: relative;
   text-align: center;
-  transition: .5s all;
+  @include hsr-transition(.5s all);
   z-index: 300;
 
   .product:hover & {
@@ -170,7 +170,7 @@
   opacity: 0;
   text-decoration: none;
   text-transform: uppercase;
-  transition: .5s .2s all;
+  @include hsr-transition(.5s .2s all);
 
   &:hover {
     color: #000;
@@ -182,7 +182,7 @@
   }
 
   .product.product--active & {
-    transition-delay: 0s;
+    @include hsr-transition(.1s all);
   }
 }
 
@@ -198,14 +198,14 @@
   outline: none;
   padding: 0 15px;
   text-transform: uppercase;
-  transition: .5s .1s all;
+  @include hsr-transition(.5s .1s all);
 
   .product:hover & {
     max-height: 100px;
   }
 
   .product.product--active & {
-    transition-delay: 0s;
+    @include hsr-transition(.1s all);
   }
 }
 

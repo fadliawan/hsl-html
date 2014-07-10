@@ -169,10 +169,16 @@
 
       $('.product')
         .mouseover(function() {
-          $(this).addClass('product--active');
+          var self = this;
+          setTimeout(function() {
+            $(self).addClass('product--active');
+          }, 10);
         })
         .mouseout(function() {
-          $(this).removeClass('product--active');
+          var self = this;
+          setTimeout(function() {
+            $(self).removeClass('product--active');
+          }, 10);
         });
 
     })();

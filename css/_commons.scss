@@ -13,3 +13,10 @@ $hsr-red: #ff3000;
     font-weight: 400;
   }
 }
+
+@mixin hsr-transition($content) {
+  -webkit-transition: $content;
+     -moz-transition: $content;
+       -o-transition: $content;
+          transition: $content;
+}
