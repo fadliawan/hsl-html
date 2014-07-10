@@ -63,26 +63,26 @@
           </li>
 
           <li class="product">
-            <img class="product__cover" src="images/product-001/ATC_WAAATC_250x250_AlbumCover.png">
-            <img class="product__vinyl" src="images/product-001/ATC_WAAATC_250x250_Vinyl_MarbleBlue.png">
+            <img class="product__cover" src="images/product-002/ATC_WAAATC_250x250_AlbumCover.png">
+            <img class="product__vinyl" src="images/product-002/ATC_WAAATC_250x250_Vinyl_White.png">
             <div class="product__price"><span class="product__price-currency">SGD</span> 35.00</div>
             <div class="product__info">
               <h2 class="product-info__title">We are all Amateur Takes Control</h2>
               <p class="product-info__artist">Amateur Takes Control</p>
-              <p class="product-info__spec">12" LP Marble Blue Vinyl</p>
+              <p class="product-info__spec">12" LP White Vinyl</p>
             </div>
             <a class="product__detail-link">Click to view details</a>
             <button class="product__cart-button">Add to Cart</button>
           </li>
 
           <li class="product">
-            <img class="product__cover" src="images/product-001/ATC_WAAATC_250x250_AlbumCover.png">
-            <img class="product__vinyl" src="images/product-001/ATC_WAAATC_250x250_Vinyl_MarbleBlue.png">
+            <img class="product__cover" src="images/product-003/Satan_Kingbreaker_230x230_AlbumCover_Black.png">
+            <img class="product__vinyl" src="images/product-003/Satan_Kingbreaker_230x230_Vinyl_Black.png">
             <div class="product__price"><span class="product__price-currency">SGD</span> 35.00</div>
             <div class="product__info">
-              <h2 class="product-info__title">We are all Amateur Takes Control</h2>
-              <p class="product-info__artist">Amateur Takes Control</p>
-              <p class="product-info__spec">12" LP Marble Blue Vinyl</p>
+              <h2 class="product-info__title">Kingbreaker</h2>
+              <p class="product-info__artist">SATAN!</p>
+              <p class="product-info__spec">12" LP 180g Vinyl</p>
             </div>
             <a class="product__detail-link">Click to view details</a>
             <button class="product__cart-button">Add to Cart</button>
@@ -162,5 +162,20 @@
       </div>
     </footer>
   </div>
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    (function() {
+
+      $('.product')
+        .mouseover(function() {
+          $(this).addClass('product--active');
+        })
+        .mouseout(function() {
+          $(this).removeClass('product--active');
+        });
+
+    })();
+  </script>
 </body>
 </html>

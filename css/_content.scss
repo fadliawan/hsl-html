@@ -60,7 +60,7 @@
   h1 {
     @extend %heading-one;
 
-    margin-bottom: 55px;
+    margin-bottom: 15px;
     text-align: center;
   }
 }
@@ -83,13 +83,26 @@
 }
 
 .product__cover {
+  left: 50px;
   position: absolute;
+  transition: .2s all;
   z-index: 200;
+
+  .product:hover & {
+    left: 15px;
+  }
 }
 
 .product__vinyl {
+  left: 50px;
   position: absolute;
+  transition: .2s all;
   z-index: 100;
+
+  .product:hover & {
+    left: 83px;
+    transform: rotate(25deg);
+  }
 }
 
 .product__price {
@@ -97,10 +110,16 @@
   font-style: italic;
   font-weight: 700;
   line-height: 1em;
+  opacity: 0;
   position: absolute;
   right: 0;
   top: -35px;
+  transition: .5s all;
   z-index: 400;
+
+  .product:hover & {
+    opacity: 1;
+  }
 }
 
 .product__price-currency {
@@ -111,10 +130,16 @@
   background-color: rgba(0, 0, 0, .85);
   border-bottom: 2px solid $hsr-red;
   margin-top: 136px;
+  opacity: 0;
   padding: 15px;
   position: relative;
   text-align: center;
+  transition: .5s all;
   z-index: 300;
+
+  .product:hover & {
+    opacity: 1;
+  }
 }
 
 .product-info__title {
@@ -142,12 +167,22 @@
   float: left;
   line-height: 28px;
   margin-left: 28px;
+  opacity: 0;
   text-decoration: none;
   text-transform: uppercase;
+  transition: .5s .2s all;
 
   &:hover {
     color: #000;
     cursor: pointer;
+  }
+
+  .product:hover & {
+    opacity: 1;
+  }
+
+  .product.product--active & {
+    transition-delay: 0s;
   }
 }
 
@@ -158,10 +193,20 @@
   display: block;
   float: right;
   font-weight: 700;
+  max-height: 0;
   line-height: 28px;
   outline: none;
   padding: 0 15px;
   text-transform: uppercase;
+  transition: .5s .1s all;
+
+  .product:hover & {
+    max-height: 100px;
+  }
+
+  .product.product--active & {
+    transition-delay: 0s;
+  }
 }
 
 @media only screen and (min-width: 480px) {
