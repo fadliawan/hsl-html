@@ -1,6 +1,6 @@
 .site-footer {
   background: #111;
-  border-top: 2px solid #ff3000;
+  border-top: 2px solid $hsr-red;
   width: 100%;
 
   footer {
@@ -21,7 +21,7 @@
 }
 
 .footer-menu__heading {
-  color: #ff3000;
+  color: $hsr-red;
   font-size: 14px;
   font-weight: bold;
   line-height: 21px;

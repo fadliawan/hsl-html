@@ -1,1 +1,15 @@
 $heading-color: #343434;
+
+$hsr-red: #ff3000;
+
+%heading-one {
+  color: $heading-color;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  strong {
+    font-weight: 400;
+  }
+}

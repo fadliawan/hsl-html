@@ -10,11 +10,15 @@
     height: 700px;
     margin-top: -180px;
   }
+
+  .page-product & {
+    background-color: #fff;
+  }
 }
 
 .content {
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 80px;
   width: 1020px;
 }
 
@@ -29,11 +33,7 @@
   position: relative;
 
   h1 {
-    color: $heading-color;
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+    @extend %heading-one;
   }
 
   p {
@@ -54,6 +54,114 @@
     text-align: right;
     text-transform: uppercase;
   }
+}
+
+.store {
+  h1 {
+    @extend %heading-one;
+
+    margin-bottom: 55px;
+    text-align: center;
+  }
+}
+
+.product-catalog {
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+
+.product {
+  display: block;
+  float: left;
+  margin: 40px 15px 0 0;
+  position: relative;
+  width: 330px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.product__cover {
+  position: absolute;
+  z-index: 200;
+}
+
+.product__vinyl {
+  position: absolute;
+  z-index: 100;
+}
+
+.product__price {
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1em;
+  position: absolute;
+  right: 0;
+  top: -35px;
+  z-index: 400;
+}
+
+.product__price-currency {
+  font-size: 18px;
+}
+
+.product__info {
+  background-color: rgba(0, 0, 0, .85);
+  border-bottom: 2px solid $hsr-red;
+  margin-top: 136px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  z-index: 300;
+}
+
+.product-info__title {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1em;
+  margin-bottom: 8px;
+}
+
+.product-info__artist,
+.product-info__spec {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1em;
+  margin-bottom: 6px;
+}
+
+.product-info__spec {
+  margin-bottom: 0;
+}
+
+.product__detail-link {
+  color: #666;
+  display: block;
+  float: left;
+  line-height: 28px;
+  margin-left: 28px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #000;
+    cursor: pointer;
+  }
+}
+
+.product__cart-button {
+  background: $hsr-red;
+  border: none;
+  color: #fff;
+  display: block;
+  float: right;
+  font-weight: 700;
+  line-height: 28px;
+  outline: none;
+  padding: 0 15px;
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 480px) {
