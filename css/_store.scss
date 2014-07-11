@@ -43,7 +43,7 @@
 
   .product:hover & {
     left: 83px;
-    transform: rotate(25deg);
+    @include hsr-transform(rotate(25deg));
   }
 }
 

@@ -14,9 +14,17 @@ $hsr-red: #ff3000;
   }
 }
 
-@mixin hsr-transition($content) {
-  -webkit-transition: $content;
-     -moz-transition: $content;
-       -o-transition: $content;
-          transition: $content;
+@mixin hsr-transition($value) {
+  -webkit-transition: $value;
+     -moz-transition: $value;
+       -o-transition: $value;
+          transition: $value;
+}
+
+@mixin hsr-transform($value) {
+  -webkit-transform: $value;
+  -moz-transform:    $value;
+  -ms-transform:     $value;
+  -o-transform:      $value;
+  transform:         $value;
 }
