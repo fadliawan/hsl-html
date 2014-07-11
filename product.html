@@ -186,7 +186,9 @@
   <script>
     (function() {
 
-      $('.js-vinyl-slider').lightSlider({
+      var $vinylSlider = $('.js-vinyl-slider');
+
+      $vinylSlider.lightSlider({
         slideWidth: 300,
         slideMargin: 0,
         slideMove: 1,
@@ -207,8 +209,11 @@
           });
 
           $('.js-vinyl-zoom').click(function() {
+            var index = $vinylSlider.find('li').index($('.active'));
+
             $.fancybox.open($vinylFancybox, {
-              loop: false
+              loop: false,
+              index: index
             });
           });
         }
