@@ -9,6 +9,7 @@
 
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/lightSlider.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-product">
@@ -51,15 +52,22 @@
         <div class="vinyl__gallery">
           <ul class="js-vinyl-slider">
             <li data-thumb="images/vinyl-001/ATC_WAAATC_600x600_AlbumCover.png">
-              <img src="images/vinyl-001/ATC_WAAATC_600x600_AlbumCover.png" width="300">
+              <a class="js-vinyl-fancybox" href="images/vinyl-001/ATC_WAAATC_600x600_AlbumCover.png" data-fancybox-group="vinyl-fancybox">
+                <img src="images/vinyl-001/ATC_WAAATC_600x600_AlbumCover.png" width="300">
+              </a>
             </li>
             <li data-thumb="images/vinyl-001/ATC_WAAATC_600x600_Vinyl_MarbleBlue.png">
-              <img src="images/vinyl-001/ATC_WAAATC_600x600_Vinyl_MarbleBlue.png" width="300">
+              <a class="js-vinyl-fancybox" href="images/vinyl-001/ATC_WAAATC_600x600_Vinyl_MarbleBlue.png" data-fancybox-group="vinyl-fancybox">
+                <img src="images/vinyl-001/ATC_WAAATC_600x600_Vinyl_MarbleBlue.png" width="300">
+              </a>
             </li>
             <li data-thumb="images/vinyl-001/ATC_WAAATC_600x600_Detail_Vinyl_MarbleBlue1.png">
-              <img src="images/vinyl-001/ATC_WAAATC_600x600_Detail_Vinyl_MarbleBlue1.png" width="300">
+              <a class="js-vinyl-fancybox" href="images/vinyl-001/ATC_WAAATC_600x600_Detail_Vinyl_MarbleBlue1.png" data-fancybox-group="vinyl-fancybox">
+                <img src="images/vinyl-001/ATC_WAAATC_600x600_Detail_Vinyl_MarbleBlue1.png" width="300">
+              </a>
             </li>
           </ul>
+          <div class="vinyl__gallery-zoom js-vinyl-zoom"></div>
         </div>
         <div class="vinyl__info">
           <h1 class="vinyl__title">We Are All Amateur Takes Control <b>- Amateur Takes Control</b></h1>
@@ -174,6 +182,7 @@
 
   <script src="js/jquery-1.11.1.min.js"></script>
   <script src="js/jquery.lightSlider.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
   <script>
     (function() {
 
@@ -183,12 +192,26 @@
         slideMove: 1,
         minSlide: 1,
         maxSlide: 1,
-        controls: true,
+        controls: false,
+        loop: false,
         thumbWidth: 90,
         thumbMargin: 15,
         gallery: true,
         useCSS: true,
-        mode: 'fade'
+        mode: 'fade',
+        onSliderLoad: function() {
+          var $vinylFancybox = $('.js-vinyl-fancybox');
+
+          $vinylFancybox.fancybox({
+            loop: false
+          });
+
+          $('.js-vinyl-zoom').click(function() {
+            $.fancybox.open($vinylFancybox, {
+              loop: false
+            });
+          });
+        }
       });
 
     })();

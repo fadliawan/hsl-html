@@ -6,7 +6,24 @@
 
 .vinyl__gallery {
   float: left;
+  position: relative;
   width: 300px;
+}
+
+.vinyl__gallery-zoom {
+  background: url('img/zoom-button.png') no-repeat center;
+  cursor: pointer;
+  height: 25px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  @include hsr-transition(.2s all);
+  width: 25px;
+  z-index: 100;
+
+  &:hover {
+    opacity: .8;
+  }
 }
 
 // jQuery lightSlider overrides

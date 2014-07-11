@@ -753,7 +753,24 @@ body {
 
 .vinyl__gallery {
   float: left;
+  position: relative;
   width: 300px; }
+
+.vinyl__gallery-zoom {
+  background: url("img/zoom-button.png") no-repeat center;
+  cursor: pointer;
+  height: 25px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all;
+  width: 25px;
+  z-index: 100; }
+  .vinyl__gallery-zoom:hover {
+    opacity: .8; }
 
 .csSlideOuter .csPager.cSGallery {
   margin-top: 15px; }
