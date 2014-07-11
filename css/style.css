@@ -747,13 +747,16 @@ body {
     transition: 0.1s all; }
 
 .vinyl {
-  margin: 40px auto 0;
+  margin: 40px auto 90px;
   overflow: hidden;
   width: 980px; }
 
 .vinyl__gallery {
   float: left;
   width: 300px; }
+
+.csSlideOuter .csPager.cSGallery {
+  margin-top: 15px; }
 
 .vinyl__info {
   float: right;

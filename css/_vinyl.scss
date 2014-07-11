@@ -1,5 +1,5 @@
 .vinyl {
-  margin: 40px auto 0;
+  margin: 40px auto 90px;
   overflow: hidden;
   width: 980px;
 }
@@ -7,6 +7,11 @@
 .vinyl__gallery {
   float: left;
   width: 300px;
+}
+
+// jQuery lightSlider overrides
+.csSlideOuter .csPager.cSGallery {
+  margin-top: 15px;
 }
 
 .vinyl__info {

@@ -8,6 +8,7 @@
   <title>We Are All Amateur Takes Control by Amateur Takes Control | Hail Satan Records</title>
 
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/lightSlider.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-product">
@@ -48,10 +49,16 @@
     <section class="content">
       <div class="vinyl">
         <div class="vinyl__gallery">
-          <ul>
-            <li><img src="images/vinyl-001/ATC_WAAATC_600x600_AlbumCover.png" width="300"></li>
-            <li><img src="images/vinyl-001/ATC_WAAATC_600x600_Vinyl_MarbleBlue.png" width="300"></li>
-            <li><img src="images/vinyl-001/ATC_WAAATC_600x600_Detail_Vinyl_MarbleBlue1.png" width="300"></li>
+          <ul class="js-vinyl-slider">
+            <li data-thumb="images/vinyl-001/ATC_WAAATC_600x600_AlbumCover.png">
+              <img src="images/vinyl-001/ATC_WAAATC_600x600_AlbumCover.png" width="300">
+            </li>
+            <li data-thumb="images/vinyl-001/ATC_WAAATC_600x600_Vinyl_MarbleBlue.png">
+              <img src="images/vinyl-001/ATC_WAAATC_600x600_Vinyl_MarbleBlue.png" width="300">
+            </li>
+            <li data-thumb="images/vinyl-001/ATC_WAAATC_600x600_Detail_Vinyl_MarbleBlue1.png">
+              <img src="images/vinyl-001/ATC_WAAATC_600x600_Detail_Vinyl_MarbleBlue1.png" width="300">
+            </li>
           </ul>
         </div>
         <div class="vinyl__info">
@@ -166,8 +173,25 @@
   </div>
 
   <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.lightSlider.min.js"></script>
   <script>
-    
+    (function() {
+
+      $('.js-vinyl-slider').lightSlider({
+        slideWidth: 300,
+        slideMargin: 0,
+        slideMove: 1,
+        minSlide: 1,
+        maxSlide: 1,
+        controls: true,
+        thumbWidth: 90,
+        thumbMargin: 15,
+        gallery: true,
+        useCSS: true,
+        mode: 'fade'
+      });
+
+    })();
   </script>
 </body>
 </html>
