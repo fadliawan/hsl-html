@@ -725,6 +725,14 @@ body {
     -o-transition: 0.1s all;
     transition: 0.1s all; }
 
+.product__detail-link-area {
+  height: 230px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 330px;
+  z-index: 500; }
+
 .product__cart-button {
   background: #ff3000;
   border: none;
