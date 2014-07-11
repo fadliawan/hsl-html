@@ -27,7 +27,7 @@
 .product__cover {
   left: 50px;
   position: absolute;
-  @include hsr-transition(.2s all);
+  @include hsr-transition(.3s all);
   z-index: 200;
 
   .product:hover & {
@@ -38,7 +38,7 @@
 .product__vinyl {
   left: 50px;
   position: absolute;
-  @include hsr-transition(.2s all);
+  @include hsr-transition(.3s all);
   z-index: 100;
 
   .product:hover & {
@@ -56,7 +56,7 @@
   position: absolute;
   right: 0;
   top: -35px;
-  @include hsr-transition(.5s all);
+  @include hsr-transition(.6s all);
   z-index: 400;
 
   .product:hover & {
@@ -76,7 +76,7 @@
   padding: 15px;
   position: relative;
   text-align: center;
-  @include hsr-transition(.5s all);
+  @include hsr-transition(.6s all);
   z-index: 300;
 
   .product:hover & {
@@ -112,7 +112,7 @@
   opacity: 0;
   text-decoration: none;
   text-transform: uppercase;
-  @include hsr-transition(.5s .2s all);
+  @include hsr-transition(.5s .3s all);
 
   &:hover {
     color: #000;
@@ -140,8 +140,10 @@
   line-height: 28px;
   outline: none;
   padding: 0 15px;
+  position: relative;
   text-transform: uppercase;
-  @include hsr-transition(.5s .1s all);
+  @include hsr-transition(.5s .2s all);
+  z-index: 200;
 
   .product:hover & {
     max-height: 100px;
