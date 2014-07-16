@@ -877,14 +877,14 @@ body {
   overflow: hidden; }
 
 .vinyl-price__label {
-  float: left;
+  float: right;
   font-size: 14px;
   line-height: 1em;
-  margin: 15px 20px 0 120px;
+  margin: 15px 20px 0 0;
   text-transform: uppercase; }
 
 .vinyl-price__amount {
-  float: left;
+  float: right;
   font-size: 30px;
   font-style: italic;
   font-weight: 700;
