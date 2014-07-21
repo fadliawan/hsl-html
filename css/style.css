@@ -975,7 +975,7 @@ body {
     line-height: 28px;
     margin-right: 15px;
     padding: 0 10px; }
-    .vinyl-size__selector li.vinyl-size__selector--selected {
+    .vinyl-size__selector li:hover, .vinyl-size__selector li.vinyl-size__selector--selected {
       background-color: #111;
       color: #fff; }
 
