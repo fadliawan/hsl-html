@@ -215,3 +215,56 @@
     }
   }
 }
+
+// T-Shirt products
+
+.vinyl__title--tshirt {
+  width: 310px;
+}
+
+.vinyl__spec--tshirt {
+  width: 310px;
+}
+
+.vinyl-size {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.vinyl-size__label {
+  float: left;
+  font-size: 16px;
+  line-height: 32px;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+.vinyl-size__selector {
+  float: left;
+
+  li {
+    border: 2px solid #111;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 16px;
+    line-height: 28px;
+    margin-right: 15px;
+    padding: 0 10px;
+
+    &.vinyl-size__selector--selected {
+      background-color: #111;
+      color: #fff;
+    }
+  }
+}
+
+.vinyl-size__chart-link,
+.vinyl-size__chart-link:visited {
+  color: $hsr-red;
+  display: block;
+  float: left;
+  font-size: 14px;
+  line-height: 32px;
+  text-decoration: none;
+}
